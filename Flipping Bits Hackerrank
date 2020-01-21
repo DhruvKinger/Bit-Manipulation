@@ -1,0 +1,6 @@
+long flippingBits(long n) {
+
+unsigned x;
+x=n;
+return ~x;
+}
