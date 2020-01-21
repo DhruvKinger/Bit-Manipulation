@@ -1,0 +1,22 @@
+
+#include <iostream>
+using namespace std;
+bool ispoweroftwo(int x)
+{
+    return (x && !(x&(x-1))); //Main Logic
+}
+int main()
+{
+    int x;
+    cin>>x;
+    int m;
+ m=ispoweroftwo(x);
+ if(m==1)
+ {
+     cout<<"Element is of power of two";
+ }
+ else{
+     cout<<"No";
+ }
+    return 0;
+}
