@@ -13,14 +13,19 @@ int set_bit(int n)
 
 int main()
 {
-    int t,n,i;
+    int t,n,i,arr[100],x;
 cin>>t;
 for(i=0;i<t;i++)
 {cout<<"\nEnter number ";
 cin>>n;
-cout<<"Signed bits :"<<set_bit(n);
+x=set_bit(n);
+arr[i]=x;
+    
 }
-
-
+cout<<"Signed bits:";
+for(i=0;i<t;i++)
+{
+    cout<<arr[i]<<" ";
+}
 return 0;
 }
